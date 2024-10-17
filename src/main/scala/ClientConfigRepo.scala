@@ -1,7 +1,6 @@
 import ConfigUpdate._
 
-class ClientConfigRepo() extends ConfigUpdateExecutor[ClientConfig, ClientConfigUpdate[ClientConfig]] {
-
+class ClientConfigRepo() extends ConfigUpdateExecutor[ClientConfigUpdate, ClientConfig] {
 
   /**
     * // FIXME: overriding method upsert in trait ConfigUpdateExecutor of 
@@ -12,7 +11,7 @@ class ClientConfigRepo() extends ConfigUpdateExecutor[ClientConfig, ClientConfig
   }
 }
 
-class ClientParentConfigRepo() extends ConfigUpdateExecutor[ClientParentConfig, ClientParentConfigUpdate[ClientParentConfig]] {
+class ClientParentConfigRepo() extends ConfigUpdateExecutor[ClientParentConfigUpdate, ClientParentConfig] {
 
   /**
     * // FIXME: overriding method upsert in trait ConfigUpdateExecutor of 

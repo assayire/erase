@@ -1,6 +1,6 @@
 import ConfigUpdate._
 
-trait ConfigUpdateExecutor[C <: Config, U <: ConfigUpdate[C]] {
+trait ConfigUpdateExecutor[U <: ConfigUpdate, C <: Config] {
   def executeUpdate(update: U): Unit = {
     update match {
       // FIXME: abstract type C in type pattern ConfigUpdate.Upsert[C]
